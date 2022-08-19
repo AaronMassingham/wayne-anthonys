@@ -6,7 +6,7 @@ import Button from '../../button/Button'
 import Modal from '../modal/Modal'
 
 //Image
-import head from '../../../images/transplants.svg'
+import TransplantsSvg from './TransplantsSvg'
 
 //Styles
 import { transplants } from '../transplants/transplants.module.css'
@@ -23,7 +23,7 @@ export default function Transplants() {
   return (
     <>
       <div className={`flex-center ${ transplants }`}>
-          <img src={ head } alt=""/>
+          <TransplantsSvg/>
           <h2 className='fancy'>Hair Transplants</h2>
           <p>Now offering advice and guidance for those taking the steps to receive hair transplants.</p>
           <span 
