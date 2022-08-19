@@ -30,6 +30,7 @@ module.exports = {
         `Open Sans\:300,400,600`, // you can also specify font weights and styles
         `Carattere`
       ],
+      subsets: [`latin`],
       display: 'swap'
     }
   },

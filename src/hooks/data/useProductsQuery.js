@@ -18,7 +18,7 @@ export const useProductsQuery = () => {
                             width: 500
                             layout: CONSTRAINED
                             fit: COVER
-                            placeholder: BLURRED
+                            placeholder: TRACED_SVG
                             formats: AUTO
                             cropFocus: CENTER
                         )

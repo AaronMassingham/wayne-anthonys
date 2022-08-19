@@ -35,7 +35,8 @@ export default function InstagramFeed() {
                 <StaticImage
                     src="../../images/instagram/bar.jpg"
                     alt="Photo of the bar area"
-                    placeholder="blurred"
+                    placeholder="tracedSVG"
+                    loading="lazy"
                     width={400}
                     height={400}
                 />
@@ -44,7 +45,8 @@ export default function InstagramFeed() {
                 <StaticImage
                     src="../../images/instagram/room.jpg"
                     alt="Photo of the barbershop"
-                    placeholder="blurred"
+                    placeholder="tracedSVG"
+                    loading="lazy"
                     width={400}
                     height={400}
                 />
@@ -53,7 +55,8 @@ export default function InstagramFeed() {
                 <StaticImage
                     src="../../images/instagram/cut.jpg"
                     alt="Photo of a hair cut"
-                    placeholder="blurred"
+                    placeholder="tracedSVG"
+                    loading="lazy"
                     width={400}
                     height={400}
                 />
