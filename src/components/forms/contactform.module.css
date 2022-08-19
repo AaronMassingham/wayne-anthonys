@@ -1,0 +1,95 @@
+.form {
+    width:100%;
+    margin: auto;
+    position: relative;
+}
+
+.form > div {
+    width:100%;
+    padding:.75rem 0
+}
+
+.form button {
+    margin:auto
+}
+
+.form input, .form select, .form textarea {
+    appearance: none;
+    background-color: transparent;
+    color: var(--bodyTextcolour);
+    border:1px solid var(--primaryColour);
+    padding:.75rem;
+    width:100%;
+    height:100%;
+    margin: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+    outline: none;
+    border-radius: 0;
+    transition:all 0.2s ease;
+    opacity:.4
+}
+
+.form input:hover, .form select:hover, .form textarea:hover,
+.form input:focus, .form select:focus, .form textarea:focus {
+    border:1px solid var(--primaryColour);
+    opacity:1;
+}
+
+.form input:focus, .form select:focus, .form textarea:focus {
+    background: var(--primaryColour);
+    color: var(--lightGrey);
+}
+
+.success {
+    text-align: center;
+    animation: success .75s ease;
+    position: absolute;
+    height: 100%;
+    background: var(--lightGrey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left:0;
+    top:0;
+    background-size:contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.success p {
+    padding: 5rem 3rem 0 3rem;
+}
+
+@keyframes success {
+    from {
+        opacity:0;
+        transform: scale(.5)
+    }
+    to {
+        opacity:1;
+        transform: scale(1)
+    }
+}
+
+@media only screen and (min-width: 600px) {
+
+    .form {
+        display:flex;
+        flex-direction: row;
+        gap: 1rem 2rem;
+        flex-wrap: wrap;
+    }
+    .form > div {
+        width:calc(50% - 1rem)
+    }
+    .form input, .form select, .form textarea {
+        padding:1rem
+    }
+    .form > div.textarea, .form > div.success {
+        width:100%
+    }
+}

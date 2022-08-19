@@ -1,0 +1,421 @@
+:root {
+	--desktopPadding: 3rem;
+	--mobilePadding: 2rem;
+	--aboveAll: 1000;
+
+	--chonkyFont: "Bebas Neue", cursive;
+	--fancyFont: "Carattere", cursive;
+	--standardFont: "Open Sans";
+
+	--bodyTextcolour: rgba(229, 217, 211, 1);
+
+	--primaryColour: rgba(255, 106, 102, 1);
+	--darkColour: rgba(17, 16, 15, 1);
+	--lightGrey: rgba(20, 20, 20, 1);
+
+	--bdrColour: linear-gradient(
+		45deg,
+		rgba(255, 106, 102, 0) 0%,
+		rgba(255, 106, 102, 1) 50%,
+		rgba(255, 106, 102, 0) 100%
+	);
+
+	--mainBodyW: 75vw;
+	--sidebarW: 25vw;
+
+	--xlFontSize: clamp(4rem, 10vw + 1rem, 10rem);
+	--lgFontSize: clamp(2.5rem, 8vw + 1rem, 6rem);
+	--mdFontSize: clamp(2.5rem, 6vw + 1rem, 4rem);
+	--smFontSize: clamp(1.5rem, 2vw + 1rem, 2rem);
+}
+
+::selection {
+	background: var(--primaryColour);
+}
+::-moz-selection {
+	background: var(--primaryColour);
+}
+
+* {
+	box-sizing: border-box;
+}
+html {
+	width: 100%;
+}
+body {
+	padding: 0;
+	margin: 0;
+	color: var(--bodyTextcolour);
+	font-family: var(--standardFont);
+	background: var(--darkColour);
+	font-size: 16px;
+}
+
+
+body.noOverflow {
+	overflow: hidden;
+}
+
+
+
+
+.withBorders {
+	position: relative;
+	display: inline-block;
+}
+.withBorders:before,
+.withBorders:after {
+	content: " ";
+	height: 1px;
+	width: 3rem;
+	position: absolute;
+	top: 45%;
+}
+
+.withBorders:before {
+	left: -4rem;
+	background: rgb(255, 106, 102);
+	background: linear-gradient(
+		90deg,
+		rgba(255, 106, 102, 0) 0%,
+		rgba(255, 106, 102, 1) 100%
+	);
+}
+.withBorders:after {
+	right: -4rem;
+	background: rgb(255, 106, 102);
+	background: linear-gradient(
+		90deg,
+		rgba(255, 106, 102, 1) 0%,
+		rgba(255, 106, 102, 0) 100%
+	);
+}
+
+/*  Border Styling  */
+
+.bdr-t-solid,
+.bdr-tb-solid,
+.bdr-b-solid {
+	position: relative;
+}
+
+.bdr-tb-solid:after,
+.bdr-tb-solid:before,
+.bdr-b-solid:before,
+.bdr-t-solid:before {
+	content: " ";
+	position: absolute;
+	left: 0;
+	height: 1px;
+	width: 100%;
+	background: rgb(255, 106, 102);
+	background: var(--bdrColour);
+	z-index: 10;
+}
+.bdr-t-solid:before,
+.bdr-tb-solid:after {
+	top: 0;
+}
+.bdr-b-solid:before,
+.bdr-tb-solid:before {
+	bottom: 0;
+}
+
+/*  Font Styling  */
+
+h1,
+h2,
+h3,
+h4,
+.chonky {
+	font-family: var(--chonkyFont);
+	font-weight: normal;
+	margin: 0;
+}
+
+h1 {
+	font-size: var(--xlFontSize);
+}
+h2 {
+	font-size: var(--lgFontSize);
+}
+h3 {
+	font-size: var(--mdFontSize);
+}
+h4 {
+	font-size: var(--smFontSize);
+}
+
+h1.small {
+	font-size: var(--lgFontSize);
+}
+h2.small {
+	font-size: var(--mdFontSize);
+}
+
+h2 a {
+	color:inherit;
+	text-decoration: none;
+}
+
+.fancy {
+	font-family: var(--fancyFont);
+}
+
+/*  Util Classes  */
+
+.flex-center,
+.flex-center-row,
+.flex-center-xy,
+.flex-center-x,
+.flex-between {
+	display: flex;
+	align-items: center;
+}
+
+.flex-center {
+	flex-direction: column;
+}
+
+.gap {
+	padding:2rem;
+	gap:2rem
+}
+
+
+.flex-center-row {
+	flex-direction: row;
+	justify-content: center;
+}
+.flex-center-xy {
+	flex-direction: column;
+	justify-content: center;
+}
+.flex-center-x {
+	flex-direction: column;
+	align-items: center;
+}
+
+.flex-between {
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.constrained-width {
+	margin: auto;
+	text-align: center;
+	max-width: 75%;
+	padding: 1rem 0;
+}
+
+.silver {
+	color:#eaeaea
+}
+.gold {
+	color:#e2c07d
+}
+.platinum {
+	color:#a6ede3
+}
+
+.primaryColour {
+	color:var(--primaryColour)
+}
+
+
+/*  Structure Classes  */
+
+.wrapper {
+	display: flex;
+	flex-direction: row;
+}
+
+main {
+	width: 100vw;
+	height: auto;
+	min-height: 100vh;
+	position: relative;
+	z-index: 2;
+}
+
+main:before {
+	content: " ";
+	position: fixed;
+	right: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	background: rgb(17, 16, 15);
+	pointer-events: none;
+}
+
+@media screen and (min-width: 770px) {
+	main:before {
+		width: var(--mainBodyW);
+		background: radial-gradient(
+			circle,
+			rgba(17, 16, 15, 0) 0%,
+			rgba(17, 16, 15, 1) 100%
+		);
+	}
+}
+
+.content {
+	position: relative;
+	z-index: 5;
+	padding: 2rem;
+
+}
+.content p {
+	line-height: 2;
+}
+
+.content p a {
+	color: var(--primaryColour);
+}
+
+.content p a,
+.content a button {
+	position: relative;
+	text-decoration: none;
+}
+
+.content p a:before {
+	position: absolute;
+	content: " ";
+	height: 1px;
+	width: 100%;
+	bottom: 0;
+	transform: translateY(6px);
+	transition: all 0.5s ease;
+	opacity: 0;
+	background: var(--bdrColour);
+}
+
+.content p a:hover:before {
+	transform: translateY(2px);
+	opacity: 1;
+}
+
+section {
+	position: relative;
+	padding: 5rem 0;
+}
+
+section:last-of-type {
+	padding-bottom: unset;
+	z-index: 1;
+}
+
+section.hero {
+	padding: unset;
+	height: 100vh;
+	width: 100%;
+}
+
+.overflow-hidden {
+	overflow: hidden;
+}
+
+@media screen and (max-width: 770px) {
+	main > section {
+		padding-top: 2rem;
+	}
+	main > section:first-of-type {
+		padding-top: 10rem;
+	}
+}
+
+@media screen and (min-width: 770px) {
+	main {
+		width: calc(100vw - var(--sidebarW));
+		margin-left: var(--sidebarW);
+	}
+	.content {
+		padding: 3rem 6rem;
+	}
+}
+
+/* Aesthetic Imagery */
+
+.face-bg {
+	height: 100vh;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 2;
+	pointer-events: none;
+	width: 50vw;
+	overflow: hidden;
+}
+
+.face-bg div {
+	width: 100%;
+	height: 100%;
+	background: url(../images/face.svg) center right no-repeat;
+	background-size: cover;
+}
+
+@media screen and (min-width: 770px) {
+	.face-bg {
+		left: var(--sidebarW);
+		width: 30vw;
+	}
+	.face-bg div {
+		background-size: contain;
+		background-position: center left;
+	}
+}
+
+
+.products {
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 4rem
+}
+
+button.productButton {
+	background: transparent;
+	min-width: 2rem;
+	font-family: var(--chonkyFont);
+	font-size: 1.2rem;
+	padding: 0.25rem 1rem;
+	min-height: 2rem;
+	border: 1px dashed var(--primaryColour);
+	color: var(--bodyTextcolour);
+	position: relative;
+	margin: 0.25rem;
+	transition: all 0.2s ease;
+	cursor: pointer;
+	border-radius: 3rem;
+}
+
+button.productButton:before {
+	position: absolute;
+	content: " ";
+	width: calc(100% + 10px);
+	height: calc(100% + 10px);
+	top: -6px;
+	left: -6px;
+	border: 1px solid var(--primaryColour);
+	transition: all 0.2s ease;
+	transform-origin: center center;
+	border-radius: 3rem;
+}
+
+button.productButton:hover:before {
+	transform: scaleX(1) scaleY(1.03) translateY(-2px) translateX(-2px);
+	border: 3px solid var(--primaryColour);
+	transform-origin: center center;
+}
+
+button.productButton.snipcart-add-item {
+	border: unset;
+	background: var(--bodyTextcolour);
+	color: var(--lightGrey);
+}

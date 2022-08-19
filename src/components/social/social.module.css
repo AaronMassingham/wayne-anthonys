@@ -1,0 +1,12 @@
+.social {
+    font-size: var(--h4FontSize);
+}
+
+.social a {
+    color:inherit;
+    transition:all 0.2s ease
+}
+.social a:hover {
+    color:var(--primaryColour);
+}
+

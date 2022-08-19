@@ -15,13 +15,22 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@formspree/core": "^2.7.1",
+    "@formspree/react": "^2.3.1",
+    "@fortawesome/free-brands-svg-icons": "^6.1.2",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "framer-motion": "^6.5.0",
     "gatsby": "^4.21.0",
     "gatsby-plugin-google-analytics": "^4.21.0",
+    "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-image": "^2.21.0",
     "gatsby-plugin-sharp": "^4.21.0",
+    "gatsby-plugin-snipcart-advanced": "^1.0.3",
     "gatsby-source-filesystem": "^4.21.0",
     "gatsby-source-wordpress": "^6.21.0",
     "gatsby-transformer-sharp": "^4.21.0",
+    "google-map-react": "^2.2.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
   }

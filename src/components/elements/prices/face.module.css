@@ -1,0 +1,13 @@
+
+
+.headImg {
+    transform-origin: center center;
+}
+
+.headImg > path {
+    fill: var(--primaryColour)
+}
+
+.headImg path.inactive {
+    opacity:.1
+}

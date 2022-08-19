@@ -1,0 +1,142 @@
+.footer {
+    min-height:75vh;
+    padding: var(--desktopPadding);
+    color:var(--lightGrey);
+    background: var(--bodyTextcolour);
+    text-align: center;
+    display:flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.footer p {
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+
+.footer h3, .footer h4 {
+    opacity:.5;
+    font-family: var(--chonkyFont)
+}
+
+.footer h2 {
+    font-size: var(--mdFontSize);
+    white-space: nowrap;
+}
+
+.footer h2,
+.footer h3 {
+    padding:0;
+    margin:0;
+}
+.footer h2, .footer h3 {
+    line-height:1
+}
+.footer h4 span {
+    font-size: var(--h4FontSize);
+    display:block
+}
+
+.footer h4 span {
+    font-family: var(--standardFont);
+    margin-bottom:0;
+
+}
+
+
+.openingTimes {
+    border-top: 1px solid rgba(0,0,0,.1);
+    margin-top:2rem;
+    padding-top:var(--desktopPadding);
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.openingTimes a button {
+    color: var(--lightGrey)
+}
+
+@media screen and (max-width: 1035px) {
+
+    .openingTimes {
+        flex-wrap: wrap;
+    }
+    .openingTimes div:last-child {
+        width:100%;
+        text-align: center;
+        margin-top:2rem;
+    }
+    .details > div > div, .details > div p {
+        padding-top:2rem;
+    }
+}
+
+@media screen and (min-width: 1035px) {
+    
+	.footer {
+        padding: var(--desktopPadding);
+        text-align: left;
+        min-height: 520px;
+    } 
+    .footer p {
+        max-width: unset;
+        margin: unset;
+    }
+    .footer br {
+        display:unset
+    }
+    .details {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+    }
+    .details > div > div {
+        position: absolute;
+        left:0;
+        bottom:0
+    }
+    .details > div {
+        flex:1;
+    }
+
+    .details > div p:first-child {
+        padding-top:0;
+    }
+    .details > div p:last-child {
+        padding-bottom:0;
+    }
+
+    .details div:last-child {
+        text-align: right;
+    }
+
+    .openingTimes {
+        justify-content: unset;
+    }
+    .openingTimes div:nth-child(2),
+    .openingTimes div:nth-child(3) {
+        padding-left:2rem;
+        margin-left:2rem;
+        border-left:1px solid rgba(0,0,0,.1);
+    }
+    .openingTimes div:last-child {
+        margin-left:auto
+    }
+}
+
+@media only screen and (min-width: 1035px) and (max-width: 1130px)  {
+    .openingTimes div span {
+        font-size: 14px;
+    }
+    .openingTimes div:nth-child(2),
+    .openingTimes div:nth-child(3) {
+        padding-left:1.25rem;
+        margin-left:1.25rem;
+    }
+    .footer h2 {
+        font-size: var(--smFontSize);
+    }
+}

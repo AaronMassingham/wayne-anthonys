@@ -1,0 +1,22 @@
+.animatedBg {
+	position: fixed;
+    z-index: 1;
+	width: 100vw;
+	height: 100vh;
+    right:0;
+    top:0;
+    overflow:hidden;
+    background:var(--darkColour) 
+
+}
+.animatedBg .bg {
+	width: calc(100vw + 600px);
+	height: 100vh;
+	background: url(../../images/background.svg) left center;
+	background-size: 300px;
+    transform-origin:left;
+    position: absolute;
+    top:0;
+    left:-300px;
+    opacity: .5;
+}

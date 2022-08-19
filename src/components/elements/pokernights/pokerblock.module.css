@@ -1,0 +1,33 @@
+
+
+
+.container {
+    text-align: center;
+}
+.container div {
+    padding:2rem 0
+}
+
+.container > div,
+.container > h3,
+.container > span {
+    position: relative;
+    z-index: 2;
+}
+
+.container > span {
+    display:block;
+    font-size:.75rem;
+    color:inherit;
+}
+
+.container div:first-of-type span {
+    display:block
+}
+
+.container .chonky {
+    font-size:3rem
+}
+
+
+

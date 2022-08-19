@@ -1,0 +1,94 @@
+.priceTable {
+	width: 100%;
+}
+
+.priceTable > div {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: -2rem;
+	padding-bottom: 2rem;
+}
+
+.priceTable ul,
+.priceTable li,
+.priceTable h4 {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+.priceTable li {
+	position: relative;
+	padding: 1.5rem 0;
+}
+
+.priceTable li:before {
+	position: absolute;
+	content: " ";
+	bottom: 0;
+	left: 0;
+	height: 1px;
+	width: 100%;
+	background: rgb(229, 217, 211);
+	background: linear-gradient(
+		-90deg,
+		rgba(255, 106, 102, 0) 20%,
+		rgba(229, 217, 211, 0.2) 100%
+	);
+}
+
+.priceTable li:last-child:before {
+	background: unset;
+}
+
+.priceTable h4 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	text-align: left;
+}
+
+.priceTable h4 span {
+	color: var(--primaryColour);
+}
+
+.priceTable p {
+	flex: 1;
+	margin-bottom: 0;
+}
+
+.togglePanel {
+	margin-top:2rem;
+}
+
+.togglePanel > button {
+	padding:0;
+	height:2rem;
+	font-size:var(--smFontSize);
+	background:unset;
+	border:unset;
+	font-family: var(--chonkyFont);
+}
+.togglePanel > button span:first-child {
+	margin-right:2rem;
+	padding-right:2rem;
+	border-right:1px solid var(--primaryColour);
+	height:100%;
+
+}
+.togglePanel > button span {
+	transition:all 0.2s ease;
+	color:var(--bodyTextcolour);
+	cursor: pointer;
+}
+.toggleBtn.head span:first-child {
+	color:var(--primaryColour);
+}
+.toggleBtn.face span:last-child {
+	color:var(--primaryColour);
+}
