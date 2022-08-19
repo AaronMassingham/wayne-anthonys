@@ -5,7 +5,7 @@ export default function PriceItem(props) {
 
     <>
         <h4>{props.title}<span>From £{props.price}</span></h4>
-        <p>{props.details}</p>
+        <p>{props.details}</p> 
     </>
   )
 }

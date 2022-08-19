@@ -1,5 +1,5 @@
 import React from 'react'
-import ProductBlock from './productBlock'
+import ProductBlock from './ProductBlock'
 
 //Hook
 import { useProductsQuery } from '../../../hooks/data/useProductsQuery'

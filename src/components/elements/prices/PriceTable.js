@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHandScissors } from '@fortawesome/free-solid-svg-icons'
 
 //Components
-import PriceItem from './priceItem';
+import PriceItem from './PriceItem';
 import ToggleButton from './ToggleButton';
 import Button from '../../button/Button'
 

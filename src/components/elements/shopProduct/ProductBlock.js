@@ -16,7 +16,7 @@ export default function ProductBlock({
     productDescription, 
     productImage 
 }) {
-
+ 
 
     // Create excerpt from productDescription
     //const more = <span onClick={ () => setModal(true) }>More</span>
