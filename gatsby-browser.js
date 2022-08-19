@@ -5,7 +5,6 @@ import Background from './src/components/bodyBackground/Background'
 
 const transitionDelay = 1000;
 
-
 export const wrapPageElement = ({element}) => (
   <>
     <AnimatePresence exitBeforeEnter>
