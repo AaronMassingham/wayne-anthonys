@@ -10,11 +10,17 @@ import PriceItem from './priceItem';
 import ToggleButton from './ToggleButton';
 import Button from '../../button/Button'
 
+//Hook
+import { useServicesQuery } from '../../../hooks/data/useServicesQuery'
+
 //Styles
 import { priceTable, togglePanel, toggleBtn, head, face } from '../prices/pricetable.module.css'
 
 
 export default function Prices() {
+
+    //WP Product Data
+    const services = useServicesQuery();
 
     const [toggle, setToggle] = useState(true);
 
@@ -73,11 +79,16 @@ return (
             variants={ list }
             key='2'
           >
-            <motion.li key='2a' variants={ item }><PriceItem title='Head' price='40.00' details='This is the description'/></motion.li>
-            <motion.li key='2b' variants={ item }><PriceItem title='Head' price='40.00' details='This is the description'/></motion.li>
-            <motion.li key='2c' variants={ item }><PriceItem title='Head' price='40.00' details='This is the description'/></motion.li>
-            <motion.li key='2d' variants={ item }><PriceItem title='Head' price='40.00' details='This is the description'/></motion.li>
-            <motion.li key='2e' variants={ item }><PriceItem title='Head' price='40.00' details='This is the description'/></motion.li>
+
+            {services.wpPage.services.haircutsServices.map((service) => (
+                <motion.li 
+                    variants={ item }
+                    key={service.name}
+                >
+                  <PriceItem title={service.cutsName} price={service.cutsPrice} details={service.cutsDescription}/>
+                </motion.li>
+            ))}
+
           </motion.ul>
 
         : 
@@ -89,9 +100,14 @@ return (
             variants={ list }
             key='1'
           >
-            <motion.li key='1a' variants={ item }><PriceItem title='Face' price='20.00' details='This is the description'/></motion.li>
-            <motion.li key='1b' variants={ item }><PriceItem title='Face' price='20.00' details='This is the description'/></motion.li>
-            <motion.li key='1c' variants={ item }><PriceItem title='Face' price='20.00' details='This is the description'/></motion.li>
+            {services.wpPage.services.shavesServices.map((service) => (
+                <motion.li 
+                    variants={ item }
+                    key={service.name}
+                >
+                  <PriceItem title={service.shavesName} price={service.shavesPrice} details={service.shavesDescription}/>
+                </motion.li>
+            ))}
           </motion.ul>
 
         }

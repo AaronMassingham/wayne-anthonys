@@ -4,7 +4,7 @@ export const useProductsQuery = () => {
 
     const products = useStaticQuery(graphql`
     query {
-        wpPage(slug: {eq: "shop"}) {
+        wpPage(slug: {eq: "products"}) {
             id
             shopProducts {
                 product {
