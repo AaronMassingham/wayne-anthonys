@@ -4,8 +4,11 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `wayne-anthony`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `Award Winning Barbers Hipperholme & Halifax | Wayne Anthonys Barbers`,
+    siteUrl: `https://wayneanthonys.co.uk`,
+    description: `Wayne Anthony Executive Barbers is an award winning 1940s style barbershop in Hipperholme, Halifax. Try a friendly, relaxing & retro barber experience today!`,
+    twitterUsername: `@WAnthonys`,
+    image: `/icon.svg`,
   },
   plugins: [{
     resolve: 'gatsby-source-wordpress',
