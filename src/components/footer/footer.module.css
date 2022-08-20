@@ -61,6 +61,16 @@
     color: var(--lightGrey)
 }
 
+@media screen and (max-width: 500px) {
+    .openingTimes h4 {
+        font-size: 1rem;
+    }
+    .openingTimes span {
+        font-size: .7rem;
+    
+    }
+}
+
 @media screen and (max-width: 1035px) {
 
     .openingTimes {

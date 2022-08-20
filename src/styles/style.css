@@ -175,10 +175,15 @@ h2 a {
 }
 
 .gap {
-	padding:2rem;
-	gap:2rem
+	padding:2rem 0;
+	gap:1rem
 }
-
+@media screen and (min-width: 770px) {
+	.gap {
+		padding:2rem;
+		gap:2rem
+	}
+}
 
 .flex-center-row {
 	flex-direction: row;

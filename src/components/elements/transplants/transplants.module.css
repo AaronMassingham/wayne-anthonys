@@ -17,7 +17,7 @@
 
 
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 770px) {
 	.transplants h2:before,
 	.transplants h2:after {
 		content: " ";
