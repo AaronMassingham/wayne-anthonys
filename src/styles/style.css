@@ -1,7 +1,7 @@
 :root {
 	--desktopPadding: 3rem;
-	--mobilePadding: 2rem;
-	--aboveAll: 1000;
+	--mobilePadding: 1rem;
+	--aboveAll: 9;
 
 	--chonkyFont: "Bebas Neue", cursive;
 	--fancyFont: "Carattere", cursive;
@@ -55,9 +55,6 @@ body {
 body.noOverflow {
 	overflow: hidden;
 }
-
-
-
 
 .withBorders {
 	position: relative;
@@ -205,12 +202,6 @@ h2 a {
 	text-align: center;
 }
 
-.constrained-width {
-	margin: auto;
-	text-align: center;
-	max-width: 75%;
-	padding: 1rem 0;
-}
 
 .silver {
 	color:#eaeaea
@@ -262,6 +253,16 @@ main:before {
 			rgba(17, 16, 15, 1) 100%
 		);
 	}
+	.constrained-width {
+
+		max-width: 75%;
+
+	}
+}
+.constrained-width {
+	margin: auto;
+	text-align: center;
+	padding: 1rem 0;
 }
 
 .content {
@@ -419,3 +420,4 @@ button.productButton.snipcart-add-item {
 	background: var(--bodyTextcolour);
 	color: var(--lightGrey);
 }
+

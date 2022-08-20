@@ -1,20 +1,36 @@
 .map {
-    width:500px;
-    height:500px;
+    width:300px;
+    height:300px;
     padding:2rem;
     position: relative;
     clip-path: circle();
     border-radius: 100%;
     margin: auto;
+    overflow: hidden;
 }
 
 .map > div {
     position: absolute;
-    width:700px;
-    height:700px;
+    width:500px;
+    height:500px;
     top:-100px;
     left:-100px
 }
+
+@media screen and (min-width: 770px) {
+    .map {
+        width:500px;
+        height:500px;
+    }
+    .map > div {
+        width:700px;
+        height:700px;
+        top:-100px;
+        left:-100px
+    }
+}
+
+
 
 .pin, .pin:before, .pin:after, .pin > div {
     width:3rem;

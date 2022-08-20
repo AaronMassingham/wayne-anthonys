@@ -1,6 +1,6 @@
 .footer {
-    min-height:75vh;
-    padding: var(--desktopPadding);
+
+    padding: 2rem;
     color:var(--lightGrey);
     background: var(--bodyTextcolour);
     text-align: center;
@@ -11,17 +11,20 @@
 .footer p {
     max-width: 75%;
     margin: 0 auto;
-    padding: 1rem 0;
+    padding: .5rem 0;
+    line-height:1;
+    font-size: .8rem;
 }
 
 
 .footer h3, .footer h4 {
     opacity:.5;
-    font-family: var(--chonkyFont)
+    font-family: var(--chonkyFont);
+
 }
 
 .footer h2 {
-    font-size: var(--mdFontSize);
+    font-size: var(--smFontSize);
     white-space: nowrap;
 }
 
@@ -48,7 +51,7 @@
 .openingTimes {
     border-top: 1px solid rgba(0,0,0,.1);
     margin-top:2rem;
-    padding-top:var(--desktopPadding);
+    padding-top:1rem;
     display:flex;
     flex-direction: row;
     justify-content: space-between;

@@ -32,8 +32,8 @@
     margin: 0 1rem;
     flex: none;
     padding: .5rem;
-    height: 8rem;
-    width: 5rem;
+    height: 7rem;
+    width: 4rem;
     font-family: var(--chonkyFont);
     font-size: 1.5rem;
     border-radius: 100%;
@@ -79,6 +79,11 @@
     }
     .container h2:last-child:after {
         left:3rem;
+    }
+    
+    .frame {
+        height: 8rem;
+        width: 5rem;
     }
 }
 @media screen and (min-width: 770px) {
