@@ -16,7 +16,6 @@ import { useServicesQuery } from '../../../hooks/data/useServicesQuery'
 //Styles
 import { priceTable, togglePanel, toggleBtn, head, face } from '../prices/pricetable.module.css'
 
-
 export default function Prices() {
 
     //WP Product Data

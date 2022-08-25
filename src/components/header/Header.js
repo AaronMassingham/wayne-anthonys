@@ -9,12 +9,7 @@ import NavContainer from '../nav/NavContainer'
 import Logo from '../logo/Logo'
 import Burger from '../nav/Burger'
 
-//Hooks
-import useMediaQuery from '../../hooks/utils/useMediaQuery'
-
 export default function HeaderTwo() {
-
-  const matches = useMediaQuery('(max-width: 770px)')
 
   const [toggle, setToggle] = useState(false);
 
