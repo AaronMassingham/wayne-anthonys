@@ -10,7 +10,8 @@
 }
 
 .form button {
-    margin:auto
+    margin:auto;
+    display: block;
 }
 
 .form input, .form select, .form textarea {

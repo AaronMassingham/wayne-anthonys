@@ -5,7 +5,7 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import Modal from '../modal/Modal'
 
 //Styles
-import { product, content, imageContainer, shopModal } from '../shopProduct/productblock.module.css'
+import { product, content, imageContainer, shopModal, productInfo, buttons } from '../shopProduct/productblock.module.css'
 import { AnimatePresence } from 'framer-motion';
 
 export default function ProductBlock({ 
@@ -20,7 +20,7 @@ export default function ProductBlock({
 
     // Create excerpt from productDescription
     //const more = <span onClick={ () => setModal(true) }>More</span>
-    const str = productDescription.substring(0, 150) + '...';
+    const str = productDescription.substring(0, 100) + '...';
 
     // Get image helper
     const image = getImage(productImage)
@@ -36,25 +36,27 @@ export default function ProductBlock({
                     <GatsbyImage objectPosition="50% 50%" image={ image } alt={`image of ${ productName }`}/>
                     { productSize ? <span>{ productSize }</span> : '' } 
                 </div>
-
+                <div className={ productInfo }>
                 <h4>{ productName }</h4>
                 <div dangerouslySetInnerHTML={{ __html: str }} />
 
-                <div className='flex-center-row bdr-b-solid'>
+                <div className='bdr-b-solid'>
                     <h4 className='chonky'>£{ productPrice }</h4>
-                    <button 
-                        className="snipcart-add-item productButton"
-                        
-                        data-item-id={ sku }
-                        data-item-price={ productPrice } 
-                        data-item-url="/" 
-                        data-item-name={ productName }  
-                    >
-                        Add to cart
-                    </button>
-                    <button className='productButton' style={{marginLeft: 'auto'}} onClick={ () => setModal(true) }>More Info</button>
+                    <div className={ buttons }>
+                        <button 
+                            className="snipcart-add-item productButton"
+                            
+                            data-item-id={ sku }
+                            data-item-price={ productPrice } 
+                            data-item-url="/" 
+                            data-item-name={ productName }  
+                        >
+                            Add to cart
+                        </button>
+                        <button className='productButton' onClick={ () => setModal(true) }>More Info</button>
+                    </div>
                 </div>
-                   
+                </div>
             </div>
             <AnimatePresence>
                 { modal && (

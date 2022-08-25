@@ -5,7 +5,7 @@
     text-align: center;
 }
 .container div {
-    padding:2rem 0
+    padding:1rem 0
 }
 
 .container > div,
@@ -30,4 +30,8 @@
 }
 
 
-
+@media screen and (min-width: 450px) {
+	.container div {
+        padding:2rem 0
+    }
+}

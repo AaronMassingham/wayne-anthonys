@@ -1,52 +1,73 @@
 import React, { useState } from 'react'
+import { motion, AnimatePresence } from "framer-motion"
 
 //style
-import { header, mobileHeader, copyright, navOpen, navClosed, nav_container, backdrop } from '../header/header.module.css'
+import { header, nav_container } from '../header/header.module.css'
 
 //Components
-import Nav from '../nav/Nav'
+import NavContainer from '../nav/NavContainer'
 import Logo from '../logo/Logo'
 import Burger from '../nav/Burger'
-import Social from '../social/Social'
 
-export default function Header() {
+//Hooks
+import useMediaQuery from '../../hooks/utils/useMediaQuery'
+
+export default function HeaderTwo() {
+
+  const matches = useMediaQuery('(max-width: 770px)')
 
   const [toggle, setToggle] = useState(false);
 
-  return (
-    <div className={`testhdr ${ header } ${toggle ? `${navOpen}` : `${navClosed}`}`}>
+  const navAnim = {
+    initial: {
+      opacity: 0, 
+      y:-30,       
+      transition: {
+        duration: 1,
+      }
+    },
+    animate: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: .75,
+      }
+    }
+  }
 
+  return ( 
+    <>
 
-      <div className={mobileHeader}>
-        <Logo/>
-        <Burger toggle={ setToggle } toggleActive={ toggle }/>
+      <div className={ header }>
+        <Logo/>      
+        { matches ? <Burger toggle={ setToggle } toggleActive={ toggle }/> : null }
       </div>
 
-
-      <div className={ nav_container }>
-
-        <div>
-          <Nav toggle={ setToggle } toggleActive={ toggle }/>
+      {matches ? 
+        <><AnimatePresence exitBeforeEnter>
+          { toggle && (
+            
+            <motion.div 
+              className={ nav_container }
+              initial="initial"
+              animate="animate"
+              exit="initial"
+              variants={ navAnim }
+            >
+              <NavContainer toggle={ setToggle } toggleActive={ toggle }/>
+            </motion.div>
+            
+          ) }</AnimatePresence>
+        </>
+      
+      : 
+      
+        <div className={ nav_container }>
+          <NavContainer toggle={ setToggle } toggleActive={ toggle }/>
         </div>
+      
+      }
 
-        <div className='flex-between bdr-t-solid'>
-          <h4 className='text-center'>01422 202 848</h4>
-        </div>
-
-        <div className='bdr-t-solid'>
-          <Social />
-        </div>
-
-        <div className={`bdr-t-solid flex-between ${ copyright }`}>
-          <span>&copy; 2022 Wayne Anthony</span>
-          <span>&frasl; &frasl;</span>
-          <span>Built Off Grid by <a href="https://www.facebook.com/arnmMultimedia" rel="noreferrer" target="_blank">ARNM</a></span>
-        </div>
-
-      </div>
-
-      <div className={`${ backdrop } ${toggle ? `${navOpen}` : `${navClosed}`}`}></div>
-    </div>
-    
+    </>
   )
 }

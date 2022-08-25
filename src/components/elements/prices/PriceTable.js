@@ -83,7 +83,7 @@ return (
             {services.wpPage.services.haircutsServices.map((service) => (
                 <motion.li 
                     variants={ item }
-                    key={service.name}
+                    key={service.cutsName}
                 >
                   <PriceItem title={service.cutsName} price={service.cutsPrice} details={service.cutsDescription}/>
                 </motion.li>
@@ -103,7 +103,7 @@ return (
             {services.wpPage.services.shavesServices.map((service) => (
                 <motion.li 
                     variants={ item }
-                    key={service.name}
+                    key={service.shavesName}
                 >
                   <PriceItem title={service.shavesName} price={service.shavesPrice} details={service.shavesDescription}/>
                 </motion.li>

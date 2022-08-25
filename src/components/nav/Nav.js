@@ -3,13 +3,9 @@ import { Link } from 'gatsby'
 
 import { nav, nav_active } from '../nav/nav.module.css'
 
-export default function Nav({ toggle, toggleActive }) {
+export default function Nav() {
   return (
     <div 
-      onClick={ () => toggle(!toggleActive) } 
-      onKeyDown={ () => toggle(!toggleActive) } 
-      tabIndex={ 0 }
-      role="button" 
       className={ `flex-center ${ nav }` }
     >
       <Link activeClassName={ nav_active } to="/">Home</Link>

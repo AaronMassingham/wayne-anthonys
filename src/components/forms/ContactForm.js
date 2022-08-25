@@ -32,7 +32,7 @@ export default function ContactForm() {
 
                 <div>
                     <select name="Regarding" required>
-                        <option value="none" defaultValue disabled selected>Enquiring about...</option>
+                        <option value="none" defaultValue disabled>Enquiring about...</option>
                         <option value="General">General</option>
                         <option value="Cuts &amp; Shaves">Cuts &amp; Shaves</option>
                         <option value="Poker Nights">Poker Nights</option>

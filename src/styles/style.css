@@ -24,7 +24,7 @@
 	--sidebarW: 25vw;
 
 	--xlFontSize: clamp(4rem, 10vw + 1rem, 10rem);
-	--lgFontSize: clamp(2.5rem, 8vw + 1rem, 6rem);
+	--lgFontSize: clamp(2.5rem, 8vw + 1rem, 5rem);
 	--mdFontSize: clamp(2.5rem, 6vw + 1rem, 4rem);
 	--smFontSize: clamp(1.5rem, 2vw + 1rem, 2rem);
 }
@@ -87,6 +87,15 @@ body.noOverflow {
 		rgba(255, 106, 102, 0) 100%
 	);
 }
+
+@media screen and (max-width: 450px) {
+	.withBorders {
+		display: inline;
+		line-height: 1;
+	}
+}
+
+
 
 /*  Border Styling  */
 
@@ -236,6 +245,11 @@ main {
 	min-height: 100vh;
 	position: relative;
 	z-index: 2;
+}
+@media screen and (min-width: 770px) {
+	main {
+		z-index: 5;
+	}
 }
 
 main:before {

@@ -2,6 +2,117 @@
     width:100%
 }
 
+.imageContainer {
+    width: 100%;
+    border: 1px solid var(--primaryColour);
+    margin-bottom:2rem;
+    position: relative;
+    background-color: white;
+} 
+
+.imageContainer span {
+    position: absolute;
+    z-index: 2;
+    padding: .5rem 1rem;
+    background: var(--primaryColour);
+    color: var(--lightGrey);
+    bottom: 0;
+    left: 0;
+    font-size: .8rem;
+}
+
+.productInfo {
+    text-align: center;
+}
+
+.productInfo h4:last-of-type {
+    color: var(--primaryColour);
+    margin-right:1rem;
+}
+
+.buttons {
+    padding: 1rem 0 1.5rem;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.buttons > button:last-child {
+    margin-left:1rem
+}
+
+.shopModal {
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    gap: 2rem
+}
+
+.shopModal > div {
+    flex:1
+}
+
+
+@media screen and (min-width: 650px) {
+    .content {
+        display:flex;
+        gap:1rem
+    }
+    .productInfo {
+        text-align: left;
+    }
+
+}
+
+@media screen and (max-width: 770px) {
+    .shopModal h3 {
+        margin-top:2rem
+    }
+}
+
+@media screen and (min-width: 770px) {
+    .shopModal {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .content {
+        display:block;
+    }
+
+    .product {
+        width:calc(50% - 2rem);
+        height: 100%;
+    }
+
+}
+
+@media only screen and (min-width: 1080px) and (max-width: 1280px) {
+    .productInfo > h4 {
+        min-height: 4.5rem;
+    }
+}
+
+@media screen and (min-width: 1250px) {
+    .productInfo > div:last-child {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .buttons > button:last-child {
+        margin-left:1rem
+    }
+}
+
+
+
+
+/*.product {
+    width:100%
+}
+
 .product h4 {
     font-size:var(--smFontSize)
 }
@@ -22,7 +133,7 @@
     background-color: white;
 } 
 
-.imageContainer span {
+DONE .imageContainer span {
     position: absolute;
     z-index: 2;
     padding: .75rem 1.5rem;
@@ -56,3 +167,4 @@
         flex-direction: row;
     }
 }
+*/

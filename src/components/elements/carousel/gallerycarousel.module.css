@@ -8,7 +8,8 @@
     align-items: center;
     position: relative;
     padding:0 3rem;
-    margin-top:3rem
+    margin-top:3rem;
+    overflow: hidden;
 }
 
 .container > div {
@@ -35,6 +36,6 @@
     width:100%;
 }
 
-.container button {
+@media screen and (min-width: 450px) {
 
 }

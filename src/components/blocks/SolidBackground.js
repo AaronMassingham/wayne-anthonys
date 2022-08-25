@@ -48,7 +48,7 @@ const contentAnimation = {
       initial="initial"
       animate="animate"
       exit="initial"
-      key={props.key}
+
       >
       </motion.div>
       <motion.div

@@ -16,7 +16,7 @@ export const useProductsQuery = () => {
                     productImage {
                         gatsbyImage(
                             width: 500
-                            layout: CONSTRAINED
+                            layout: FULL_WIDTH
                             fit: COVER
                             placeholder: TRACED_SVG
                             formats: AUTO

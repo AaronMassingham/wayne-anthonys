@@ -6,6 +6,7 @@
 
 .nav a {
     font-size:1.5rem;
+    margin:.5rem
 }
 
 .nav a.nav_active {
@@ -15,22 +16,24 @@
 .burger_button {
     background: var(--darkColour);
     padding: unset;
-    height: 3rem;
-    width: 3rem;
+    height: 2.6rem;
+    width: 2.6rem;
     position: absolute;
     z-index: 11;
-    bottom: -1.5rem;
+    bottom: -1.3rem;
     left: 50%;
-    transform: translateX(-1.5rem);
+    transform: translateX(-1.3rem);
     border-radius: 100%;
     border: 1px solid var(--primaryColour);
     cursor: pointer;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .burger_button svg {
-    width:1.6rem;
-    height:1.6rem;
+    width:1.3rem;
+    height:1.3rem;
 }
 
 .burger_button path {
@@ -55,6 +58,17 @@
 
 .navOpen path:nth-child(even) {
     opacity:0;
+}
+
+.copyright {
+	font-family: var(--standardFont);
+	font-size: 60%;
+}
+
+.copyright span:nth-child(even),
+.copyright a {
+	color: var(--primaryColour);
+	text-decoration: none;
 }
 
 @media screen and (min-width: 770px) {

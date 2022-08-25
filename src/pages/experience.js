@@ -53,7 +53,7 @@ export default function Experience() {
       <SolidBackground>
         <div className='constrained-width'>
           <h3 className='withBorders'>Wayne Anthony</h3>
-          <h4 className='fancy'>Wayne Anthony has 30 years experience as a barber and salon proprietor of repute.</h4>
+          <h4 style={{paddingTop: '1rem'}} className='fancy'>Wayne Anthony has 30 years experience as a barber and salon proprietor of repute.</h4>
           <p>Having served a 5 year apprenticeship, Wayne kicked off his own business and over years has accumulated over 50 major hairdressing championship awards while competing all over the UK, including the British Championships. He also trained with the British World Cup squad and the world renowned “Constantino Brothers”.</p>
         </div>
         <div className='bdr-tb-solid' style={{margin: 'auto', textAlign:'center', maxWidth: '400px',marginTop:'4rem', fontSize:'1.5rem', padding: '1rem 0'}}>
