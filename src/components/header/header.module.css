@@ -1,3 +1,5 @@
+
+
 .header {
 	display: flex;
 	flex-direction: column;
@@ -91,6 +93,9 @@
 		max-width:250px;
 		width:100%
 	}
+	.mobile {
+		display: none;
+	}
 }
 
 @media only screen and (max-height: 620px) {
@@ -131,4 +136,10 @@
 		font-size:medium
 	}
 
+}
+
+@media screen and (max-width: 770px) {
+	.desktop {
+		display: none;
+	}
 }

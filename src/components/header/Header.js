@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { motion, AnimatePresence } from "framer-motion"
 
 //style
-import { header, nav_container } from '../header/header.module.css'
+import { header, nav_container, desktop, mobile } from '../header/header.module.css'
 
 //Components
 import NavContainer from '../nav/NavContainer'
@@ -40,15 +40,15 @@ export default function HeaderTwo() {
 
       <div className={ header }>
         <Logo/>      
-        { matches ? <Burger toggle={ setToggle } toggleActive={ toggle }/> : null }
+        <Burger toggle={ setToggle } toggleActive={ toggle }/>
       </div>
 
-      {matches ? 
-        <><AnimatePresence exitBeforeEnter>
+
+        <AnimatePresence exitBeforeEnter initial='false'>
           { toggle && (
             
             <motion.div 
-              className={ nav_container }
+              className={` ${nav_container} ${mobile} `}
               initial="initial"
               animate="animate"
               exit="initial"
@@ -57,16 +57,14 @@ export default function HeaderTwo() {
               <NavContainer toggle={ setToggle } toggleActive={ toggle }/>
             </motion.div>
             
-          ) }</AnimatePresence>
-        </>
+          ) }
+        </AnimatePresence>
+
       
-      : 
-      
-        <div className={ nav_container }>
+        <div className={` ${nav_container} ${desktop} `}>
           <NavContainer toggle={ setToggle } toggleActive={ toggle }/>
         </div>
       
-      }
 
     </>
   )

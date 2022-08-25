@@ -48,7 +48,7 @@ export default function ProductBlock({
                             
                             data-item-id={ sku }
                             data-item-price={ productPrice } 
-                            data-item-url="/" 
+                            data-item-url="/shop" 
                             data-item-name={ productName }  
                         >
                             Add to cart
@@ -62,17 +62,17 @@ export default function ProductBlock({
                 { modal && (
                     <Modal setModal={ setModal }>
                         <div className={ shopModal }>
-                            <div>
+                            <div style={{maxWidth:500}}>
                                 <GatsbyImage objectPosition="50% 50%" image={ image } alt={`image of ${ productName }`}/>
                             </div>
                             <div>
                                 <h3>{ productName }</h3>
                                 <div dangerouslySetInnerHTML={ { __html: productDescription } } /> 
                                 <button 
-                                    className="snipcart-add-item"
+                                    className="snipcart-add-item productButton"
                                     data-item-id={ sku }
                                     data-item-price={ productPrice }
-                                    data-item-url="/" 
+                                    data-item-url="/shop" 
                                     data-item-name={ productName }  
                                 >
                                     Add this item to your cart
