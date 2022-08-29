@@ -12,9 +12,6 @@ import Button from '../button/Button'
 //Styles
 import { instagramFeed, images, img, overlay } from '../feeds/instagramFeed.module.css'
 
-//Data Hook
-//import { useInstagramQuery } from '../../hooks/data/useInstagramQuery'
-
 export default function InstagramFeed() {
 
     return (
