@@ -48,7 +48,7 @@ const FullBackground = ( {children} ) => {
       <motion.div
           className={ background }
           variants={ backgroundAnimation }
-          initial={false}
+          initial="initial"
           animate="animate"
           exit="initial"
           style={{ display: "grid" }}
@@ -56,10 +56,8 @@ const FullBackground = ( {children} ) => {
            <StaticImage 
             src="../../images/test.jpg" 
             alt="background image" 
-            placeholder="tracedSVG"
+            placeholder="blurred"
             layout="fullWidth"
-            fadeIn="false" 
-            loading="eager"
             fit="cover"
             style={{
               gridArea: "1/1",
