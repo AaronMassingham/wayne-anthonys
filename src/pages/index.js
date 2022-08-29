@@ -16,6 +16,9 @@ import HomeHero from '../components/elements/HomeHero'
 import InstagramFeed from '../components/feeds/InstagramFeed'
 import Transplants from '../components/elements/transplants/Transplants'
 
+//SEO
+import { Seo } from "../components/seo/Seo"
+
 export default function Index() {
 
   return (
@@ -64,3 +67,7 @@ export default function Index() {
 
   )
 }
+
+export const Head = () => (
+  <Seo />
+)

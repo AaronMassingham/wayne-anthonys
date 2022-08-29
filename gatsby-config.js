@@ -49,22 +49,15 @@ module.exports = {
     resolve: `gatsby-plugin-snipcart-advanced`,
     options: {
       version: "3.0.29",
-      publicApiKey: process.env.GATSBY_SNIPCART_API_KEY, // use public api key here or in environment variable
+      publicApiKey: 'process.env.GATSBY_SNIPCART_API_KEY', // use public api key here or in environment variable
       defaultLang: "en",
       currency: "gbp",
       openCartOnAdd: true,
       useSideCart: false,
+      loadStrategy: 'on-user-interaction',
       // be careful with this mode cart. The cart in this mode has a bug of scroll in firefox
       },
-  },
-  {
-    resolve: `gatsby-plugin-loadable-components-ssr`,
-    options: {
-      // Whether replaceHydrateFunction should call ReactDOM.hydrate or ReactDOM.render
-      // Defaults to ReactDOM.render on develop and ReactDOM.hydrate on build
-      useHydrate: true,
-    },
-  },
+  }
 
 ]
 };
