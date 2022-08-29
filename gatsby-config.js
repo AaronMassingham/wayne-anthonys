@@ -23,6 +23,20 @@ module.exports = {
   //  }
   //},
   {
+    resolve: `gatsby-plugin-manifest`,
+    options: {
+      name: `Wayne Anthonys Executive Barber`,
+      short_name: `Wayne Anthonys`,
+      description: `Wayne Anthony Executive Barbers is an award winning 1940s style barbershop in Hipperholme, Halifax.`,
+      icon: `./static/icon.svg`,
+      start_url: `/`,
+      background_color: `#0c0c0b`,
+      lang: `en`,
+      theme_color: `#ff6a66`,
+      display: `standalone`,
+    },
+  },
+  {
     resolve: `gatsby-plugin-google-fonts`,
     options: {
       fonts: [

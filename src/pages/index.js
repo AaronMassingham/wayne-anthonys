@@ -1,6 +1,9 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
+//SEO
+import { SEO } from "../components/seo/seo"
+
 //Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHandScissors, faScissors } from '@fortawesome/free-solid-svg-icons'
@@ -16,8 +19,7 @@ import HomeHero from '../components/elements/HomeHero'
 import InstagramFeed from '../components/feeds/InstagramFeed'
 import Transplants from '../components/elements/transplants/Transplants'
 
-//SEO
-import { SEO } from "../components/seo/seo"
+
 
 export default function Index() {
 
@@ -53,7 +55,7 @@ export default function Index() {
             <p>Wayne Anthony's Award Winning Barbershop has a long time reputation for being one of the finest places to get your hair cut as sharp as a razor, your face shaved as smooth as silk or your beard sculpted like a chunk of Michelangelo's marble. Established in 1985, Wayne Anthony's vision has been to re-create that classic 1940's feel the moment you rock up to our front door.</p>
             <p>We strive for a relaxed atmosphere and <Link to='/experience'>experience like no other</Link>, once you're through the door, you'll never want to leave.</p>
           </div>
-        </SolidBackground>
+        </SolidBackground> 
 
         <SolidBackground>
           <InstagramFeed/>
@@ -68,6 +70,8 @@ export default function Index() {
   )
 }
 
-export const Head = () => (
-  <SEO />
-)
+export function Head() {
+  return (
+    <SEO />
+  )
+}

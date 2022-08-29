@@ -1,5 +1,8 @@
 import React from 'react'
 
+//SEO
+import { SEO } from "../components/seo/seo"
+
 //Layout Components
 import Layout from '../components/layout/Layout'
 import SolidBackground from '../components/blocks/SolidBackground'
@@ -10,9 +13,6 @@ import Social from '../components/social/Social'
 import PokerNights from '../components/elements/pokernights/PokerNights'
 import PokerPriceTable from '../components/elements/pokernights/PokerPriceTable'
 import GalleryCarousel from '../components/elements/carousel/GalleryCarousel'
-
-//SEO
-import { SEO } from "../components/seo/seo"
 
 export default function Experience() {
 
@@ -68,6 +68,8 @@ export default function Experience() {
   )
 }
 
-export const Head = () => (
-  <SEO title="The Wayne Anthony Experience | Wayne Anthonys Barbers" />
-)
+export function Head() {
+  return (
+    <SEO title="The Wayne Anthony Experience | Wayne Anthonys Barbers" />
+  )
+}

@@ -1,6 +1,9 @@
 import React from "react"
 import { Link } from 'gatsby'
 
+//SEO
+import { SEO } from "../components/seo/seo"
+
 //Block Components
 import SolidBackground from "../components/blocks/SolidBackground"
 
@@ -24,3 +27,9 @@ const NotFoundPage = () => {
 }
 
 export default NotFoundPage
+
+export function Head() {
+  return (
+    <SEO title="Oops! 404, Page Not Found | Wayne Anthonys Barbers" />
+  )
+}

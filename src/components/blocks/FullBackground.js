@@ -13,14 +13,14 @@ const FullBackground = ( {children} ) => {
       opacity: 0,
       scale:.95,
       transition: {
-        duration:1
+        duration:.25
       }
     },
     animate: {
       opacity: 1,
       scale:1,
       transition: {
-        duration:1
+        duration:.25
       }
     },
   }
@@ -31,14 +31,14 @@ const FullBackground = ( {children} ) => {
       opacity: 0,
       y: -30,
       transition: {
-        duration:1
+        duration:.5
       }
     },
     animate: {
       opacity: 1,
       y: 0,
       transition: {
-        duration:1
+        duration:.5
       }
     },
   }

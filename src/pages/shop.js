@@ -1,5 +1,8 @@
 import React from 'react'
 
+//SEO
+import { SEO } from "../components/seo/seo"
+
 //Layout Components
 import Layout from '../components/layout/Layout'
 import SolidBackground from '../components/blocks/SolidBackground'
@@ -7,9 +10,6 @@ import SolidBackground from '../components/blocks/SolidBackground'
 //Content Components
 import SubPageTitle from '../components/elements/SubPageTitle'
 import Products from '../components/elements/shopProduct/Products'
-
-//SEO
-import { SEO } from "../components/seo/seo"
 
 export default function shop() {
     
@@ -30,6 +30,8 @@ export default function shop() {
     )
 }
 
-export const Head = () => (
-    <SEO title="Buy Our Hair Care Products | Wayne Anthonys Barbers" />
-  )
+export function Head() {
+    return (
+        <SEO title="Buy Our Hair Care Products | Wayne Anthonys Barbers" />
+    )
+}

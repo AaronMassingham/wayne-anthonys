@@ -11,4 +11,3 @@ export const wrapPageElement = ({element}) => (
     <Background/>
   </>
 );
-
