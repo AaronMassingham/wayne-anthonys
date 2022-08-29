@@ -17,7 +17,7 @@ import InstagramFeed from '../components/feeds/InstagramFeed'
 import Transplants from '../components/elements/transplants/Transplants'
 
 //SEO
-import { Seo } from "../components/seo/Seo"
+import { SEO } from "../components/seo/seo"
 
 export default function Index() {
 
@@ -69,5 +69,5 @@ export default function Index() {
 }
 
 export const Head = () => (
-  <Seo />
+  <SEO />
 )

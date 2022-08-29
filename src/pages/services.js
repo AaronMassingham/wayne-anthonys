@@ -11,7 +11,7 @@ import SubPageTitle from '../components/elements/SubPageTitle'
 import Transplants from '../components/elements/transplants/Transplants'
 
 //SEO
-import { Seo } from "../components/seo/Seo"
+import { SEO } from "../components/seo/seo"
 
 export default function Services() {
 
@@ -87,5 +87,5 @@ export default function Services() {
 }
 
 export const Head = () => (
-  <Seo title="Services And Pricing | Wayne Anthonys Barbers" />
+  <SEO title="Services And Pricing | Wayne Anthonys Barbers" />
 )

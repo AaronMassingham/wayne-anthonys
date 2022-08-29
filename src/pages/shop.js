@@ -9,7 +9,7 @@ import SubPageTitle from '../components/elements/SubPageTitle'
 import Products from '../components/elements/shopProduct/Products'
 
 //SEO
-import { Seo } from "../components/seo/Seo"
+import { SEO } from "../components/seo/seo"
 
 export default function shop() {
     
@@ -31,5 +31,5 @@ export default function shop() {
 }
 
 export const Head = () => (
-    <Seo title="Buy Our Hair Care Products | Wayne Anthonys Barbers" />
+    <SEO title="Buy Our Hair Care Products | Wayne Anthonys Barbers" />
   )
