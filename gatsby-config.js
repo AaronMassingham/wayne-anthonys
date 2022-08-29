@@ -56,5 +56,15 @@ module.exports = {
       useSideCart: false,
       // be careful with this mode cart. The cart in this mode has a bug of scroll in firefox
       },
-  },]
+  },
+  {
+    resolve: `gatsby-plugin-loadable-components-ssr`,
+    options: {
+      // Whether replaceHydrateFunction should call ReactDOM.hydrate or ReactDOM.render
+      // Defaults to ReactDOM.render on develop and ReactDOM.hydrate on build
+      useHydrate: true,
+    },
+  },
+
+]
 };
