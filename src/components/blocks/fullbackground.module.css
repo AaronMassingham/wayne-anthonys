@@ -1,10 +1,9 @@
 .background {
 	position: absolute;
 	z-index: 1;
-	width: 120%;
-	height: 120%;
-	top: -10%;
-	left: -10%;
+	width: 110%;
+	height: 110%;
+	top: -5%;
+	left: -5%;
 	pointer-events: none;
-	background: url(../../images/test.jpg) center center no-repeat;
 }

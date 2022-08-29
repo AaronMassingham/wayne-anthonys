@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from "framer-motion"
-
+import { StaticImage } from "gatsby-plugin-image"
+ 
 //Styles
 import { background } from '../blocks/fullbackground.module.css';
 
@@ -50,8 +51,21 @@ const FullBackground = ( {children} ) => {
           initial="initial"
           animate="animate"
           exit="initial"
+          style={{ display: "grid" }}
         >
+           <StaticImage 
+            src="../../images/test.jpg" 
+            alt="background image" 
+            placeholder="tracedSVG"
+            layout="fullWidth"
+            fit="cover"
+            style={{
+              gridArea: "1/1",
+            }}
+            formats={["auto", "webp", "avif"]}
+          />
         </motion.div>
+       
         <motion.div
             className='content'
             variants={ contentAnimation }
