@@ -11,6 +11,9 @@ import PokerNights from '../components/elements/pokernights/PokerNights'
 import PokerPriceTable from '../components/elements/pokernights/PokerPriceTable'
 import GalleryCarousel from '../components/elements/carousel/GalleryCarousel'
 
+//SEO
+import { Seo } from "../components/seo/Seo"
+
 export default function Experience() {
 
     //WP Data
@@ -65,3 +68,6 @@ export default function Experience() {
   )
 }
 
+export const Head = () => (
+  <Seo title="The Wayne Anthony Experience | Wayne Anthonys Barbers" />
+)

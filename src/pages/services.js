@@ -10,6 +10,9 @@ import PriceTable from '../components/elements/prices/PriceTable'
 import SubPageTitle from '../components/elements/SubPageTitle'
 import Transplants from '../components/elements/transplants/Transplants'
 
+//SEO
+import { Seo } from "../components/seo/Seo"
+
 export default function Services() {
 
 
@@ -82,3 +85,7 @@ export default function Services() {
 
   )
 }
+
+export const Head = () => (
+  <Seo title="Services And Pricing | Wayne Anthonys Barbers" />
+)

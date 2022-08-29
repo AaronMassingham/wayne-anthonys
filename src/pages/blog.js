@@ -12,6 +12,8 @@ import Button from '../components/button/Button'
 //Hook
 import { useBlogPostQuery } from '../hooks/data/useBlogPostQuery'
 
+//SEO
+import { Seo } from "../components/seo/Seo"
 
 export default function Blog() {
 
@@ -57,4 +59,8 @@ export default function Blog() {
     </Layout>
   )
 }
+
+export const Head = () => (
+  <Seo title="Tips, Tricks, And News From Our Blog | Wayne Anthonys Barbers" />
+)
 

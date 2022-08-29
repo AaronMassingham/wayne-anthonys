@@ -9,6 +9,8 @@ import SubPageTitle from '../components/elements/SubPageTitle'
 import ContactForm from '../components/forms/ContactForm'
 import Map from '../components/elements/map/Map'
 
+//SEO
+import { Seo } from "../components/seo/Seo"
 
 export default function Contact() {
 
@@ -35,3 +37,7 @@ export default function Contact() {
     </Layout>
   )
 }
+
+export const Head = () => (
+  <Seo title="Get In Touch With Us | Wayne Anthonys Barbers" />
+)

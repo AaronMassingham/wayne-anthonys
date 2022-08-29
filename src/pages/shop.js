@@ -8,6 +8,9 @@ import SolidBackground from '../components/blocks/SolidBackground'
 import SubPageTitle from '../components/elements/SubPageTitle'
 import Products from '../components/elements/shopProduct/Products'
 
+//SEO
+import { Seo } from "../components/seo/Seo"
+
 export default function shop() {
     
     return (
@@ -26,3 +29,7 @@ export default function shop() {
         </Layout>
     )
 }
+
+export const Head = () => (
+    <Seo title="Buy Our Hair Care Products | Wayne Anthonys Barbers" />
+  )
