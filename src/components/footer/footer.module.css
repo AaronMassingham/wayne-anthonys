@@ -18,13 +18,12 @@
 
 
 .footer h3, .footer h4 {
-    opacity:.5;
     font-family: var(--chonkyFont);
-
+    opacity:.75
 }
 
 .footer h2 {
-    font-size: var(--smFontSize);
+    font-size: var(--mdFontSize);
     white-space: nowrap;
 }
 

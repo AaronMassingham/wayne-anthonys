@@ -5,6 +5,7 @@ import { burger_button, navOpen, navClosed } from '../nav/nav.module.css'
 export default function Burger({ toggle, toggleActive }) {
   return (
     <button 
+      aria-label="Toggle Navigation Open or Closed"
       onClick={() => toggle(!toggleActive)} 
       className={`${burger_button} ${toggleActive ? `${navOpen}` : `${navClosed}`}`}>
         <svg viewBox="0 0 50 50">
