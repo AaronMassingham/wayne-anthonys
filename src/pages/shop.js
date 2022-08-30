@@ -10,11 +10,13 @@ import SolidBackground from '../components/blocks/SolidBackground'
 //Content Components
 import SubPageTitle from '../components/elements/SubPageTitle'
 import Products from '../components/elements/shopProduct/Products'
+import CartIcon from '../components/elements/shopProduct/CartIcon'
 
 export default function shop() {
     
     return (
         <Layout>
+            <CartIcon/>
             <SolidBackground>
                 <SubPageTitle
                 wingedText="Products for your dome"

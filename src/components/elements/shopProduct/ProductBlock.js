@@ -14,12 +14,12 @@ export default function ProductBlock({
     productPrice, 
     productSize, 
     productDescription, 
-    productImage 
+    productImage,
+    voucherGuid
 }) {
- 
+
 
     // Create excerpt from productDescription
-    //const more = <span onClick={ () => setModal(true) }>More</span>
     const str = productDescription.substring(0, 100) + '...';
 
     // Get image helper
@@ -27,6 +27,8 @@ export default function ProductBlock({
 
     //Modal State
     const [modal, setModal] = useState(false);
+
+    console.log({voucherGuid})
     
     return (
         <div className={ product }>
@@ -50,6 +52,7 @@ export default function ProductBlock({
                             data-item-price={ productPrice } 
                             data-item-url="/shop" 
                             data-item-name={ productName }  
+                            data-item-file-guid={ voucherGuid }
                         >
                             Add to cart
                         </button>
@@ -62,7 +65,7 @@ export default function ProductBlock({
                 { modal && (
                     <Modal setModal={ setModal }>
                         <div className={ shopModal }>
-                            <div style={{maxWidth:500}}>
+                            <div style={{ maxWidth:500 }}>
                                 <GatsbyImage objectPosition="50% 50%" image={ image } alt={`image of ${ productName }`}/>
                             </div>
                             <div>
@@ -74,6 +77,7 @@ export default function ProductBlock({
                                     data-item-price={ productPrice }
                                     data-item-url="/shop" 
                                     data-item-name={ productName }  
+                                    data-item-file-guid={voucherGuid && voucherGuid}
                                 >
                                     Add this item to your cart
                                 </button>

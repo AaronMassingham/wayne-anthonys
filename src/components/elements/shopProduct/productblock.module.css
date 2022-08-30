@@ -52,6 +52,45 @@
     flex:1
 }
 
+.cartPrompt {
+    position: fixed;
+    color: white;
+    background: var(--primaryColour);
+    z-index: 9999;
+    right: 0;
+    top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transform:translateX(calc(100% - 3rem));
+    transition:all 0.2s ease
+}
+
+.cartPrompt:hover, .cartPrompt:hover {
+    transform:translateX(0)
+}
+
+.cartPrompt button {
+    width: 3rem;
+    height: 3rem;
+    padding:0;
+    background: 0;
+    border: 0;
+    font-size: 1rem;
+}
+
+.cartPrompt > div {
+    opacity: 0;
+    padding-right:1rem;
+    font-size: .8rem;
+    transition: opacity 0.2s ease .25s;
+}
+
+.cartPrompt:hover  > div, .cartPrompt:hover  > div {
+    opacity:1
+}
+
 
 @media screen and (min-width: 650px) {
     .content {

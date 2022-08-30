@@ -12,6 +12,7 @@ export const useProductsQuery = () => {
                     productName
                     productSize
                     productPrice
+                    voucherGuid
                     sku
                     productImage {
                         gatsbyImage(
