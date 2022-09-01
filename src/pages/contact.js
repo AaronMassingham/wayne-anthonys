@@ -10,7 +10,7 @@ import ContactForm from '../components/forms/ContactForm'
 import Map from '../components/elements/map/Map'
 
 //SEO
-import { Seo } from "../components/seo/Seo"
+import { SEO } from "../components/seo/seo"
 
 export default function Contact() {
 
@@ -40,6 +40,6 @@ export default function Contact() {
 
 export function Head() {
   return (
-    <Seo title="Get In Touch With Us | Wayne Anthonys Barbers" />
+    <SEO title="Get In Touch With Us | Wayne Anthonys Barbers" />
   )
 }

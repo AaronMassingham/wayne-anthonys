@@ -11,7 +11,7 @@ import Products from '../components/elements/shopProduct/Products'
 import CartIcon from '../components/elements/shopProduct/CartIcon'
 
 //SEO
-import { Seo } from "../components/seo/Seo"
+import { SEO } from "../components/seo/seo"
 
 
 export default function shop() {
@@ -61,6 +61,6 @@ export default function shop() {
 
 export function Head() {
     return (
-        <Seo title="Buy Our Hair Care Products | Wayne Anthonys Barbers" />
+        <SEO title="Buy Our Hair Care Products | Wayne Anthonys Barbers" />
     )
 }

@@ -8,7 +8,7 @@ import SolidBackground from "../components/blocks/SolidBackground"
 import Layout from '../components/layout/Layout'
 
 //SEO
-import { Seo } from "../components/seo/Seo"
+import { SEO } from "../components/seo/seo"
 
 export default function NotFoundPage() {
   return (
@@ -27,6 +27,6 @@ export default function NotFoundPage() {
 
 export function Head() {
   return (
-    <Seo title="Oops! 404, Page Not Found | Wayne Anthonys Barbers" />
+    <SEO title="Oops! 404, Page Not Found | Wayne Anthonys Barbers" />
   )
 }

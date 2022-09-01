@@ -12,7 +12,7 @@ import PokerPriceTable from '../components/elements/pokernights/PokerPriceTable'
 import GalleryCarousel from '../components/elements/carousel/GalleryCarousel'
 
 //SEO
-import { Seo } from "../components/seo/Seo"
+import { SEO } from "../components/seo/seo"
 
 export default function Experience() {
     
@@ -66,6 +66,6 @@ export default function Experience() {
 
 export function Head() {
   return (
-    <Seo title="The Wayne Anthony Experience | Wayne Anthonys Barbers" />
+    <SEO title="The Wayne Anthony Experience | Wayne Anthonys Barbers" />
   )
 }
