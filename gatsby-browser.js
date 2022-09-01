@@ -1,6 +1,12 @@
 import React from 'react';
 import { AnimatePresence } from 'framer-motion';
 
+//Fonts
+import "@fontsource/carattere"
+import "@fontsource/open-sans"
+import "@fontsource/bebas-neue"
+
+//Background
 import Background from './src/components/bodyBackground/Background'
 
 const transitionDelay = 1000;
