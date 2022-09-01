@@ -53,23 +53,20 @@
 }
 
 .cartPrompt {
-    position: fixed;
+    position: relative;
     color: white;
     background: var(--primaryColour);
     z-index: 9999;
-    right: 0;
-    top: 1rem;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    transform:translateX(calc(100% - 3rem));
-    transition:all 0.2s ease
+    width:100%;
+    transition:all 0.2s ease;
+    cursor: pointer;
 }
 
-.cartPrompt:hover, .cartPrompt:hover {
-    transform:translateX(0)
-}
+
 
 .cartPrompt button {
     width: 3rem;

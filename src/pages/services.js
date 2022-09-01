@@ -1,9 +1,6 @@
 import React from 'react'
 import { motion, useScroll, useSpring, useTransform } from "framer-motion"
 
-//SEO
-import { SEO } from "../components/seo/seo"
-
 //Layout Components
 import Layout from '../components/layout/Layout'
 import SolidBackground from '../components/blocks/SolidBackground'
@@ -12,6 +9,9 @@ import SolidBackground from '../components/blocks/SolidBackground'
 import PriceTable from '../components/elements/prices/PriceTable'
 import SubPageTitle from '../components/elements/SubPageTitle'
 import Transplants from '../components/elements/transplants/Transplants'
+
+//SEO
+import { Seo } from "../components/seo/Seo"
 
 export default function Services() {
 
@@ -88,6 +88,6 @@ export default function Services() {
 
 export function Head() {
   return (
-    <SEO title="Services And Pricing | Wayne Anthonys Barbers" />
+    <Seo title="Services And Pricing | Wayne Anthonys Barbers" />
   )
 }

@@ -1,8 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-//SEO
-import { SEO } from "../components/seo/seo"
+
 
 //Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -19,7 +18,8 @@ import HomeHero from '../components/elements/HomeHero'
 import InstagramFeed from '../components/feeds/InstagramFeed'
 import Transplants from '../components/elements/transplants/Transplants'
 
-
+//SEO
+import { Seo } from "../components/seo/Seo"
 
 export default function Index() {
 
@@ -72,6 +72,6 @@ export default function Index() {
 
 export function Head() {
   return (
-    <SEO />
+    <Seo />
   )
 }

@@ -1,9 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-//SEO
-import { SEO } from "../components/seo/seo"
-
 //Layout Components
 import Layout from '../components/layout/Layout'
 import SolidBackground from '../components/blocks/SolidBackground'
@@ -14,6 +11,9 @@ import Button from '../components/button/Button'
 
 //Hook
 import { useBlogPostQuery } from '../hooks/data/useBlogPostQuery'
+
+//SEO
+import { Seo } from "../components/seo/Seo"
 
 export default function Blog() {
 
@@ -62,6 +62,6 @@ export default function Blog() {
 
 export function Head() {
   return (
-    <SEO title="Tips, Tricks, And News From Our Blog | Wayne Anthonys Barbers" />
+    <Seo title="Tips, Tricks, And News From Our Blog | Wayne Anthonys Barbers" />
   )
 }

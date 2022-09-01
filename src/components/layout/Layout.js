@@ -13,7 +13,6 @@ import '../../styles/style.css'
 const Layout = ({ children }) => {
 
   return (
-
       <>
         <Header />
         <main>

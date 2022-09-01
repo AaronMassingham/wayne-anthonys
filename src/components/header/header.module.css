@@ -85,8 +85,12 @@
 		padding: 1rem;
 	}
 
+	.nav_container h4 {
+		font-size:1.2rem
+	}
+
 	.nav_container {
-		padding:9rem 2rem 2rem 2rem
+		padding:9rem 1rem 2rem 1rem
 	}
 
 	.header svg {
@@ -95,6 +99,12 @@
 	}
 	.mobile {
 		display: none;
+	}
+}
+
+@media screen and (min-width: 990px) {
+	.nav_container h4 {
+		font-size:var(--smFontSize)
 	}
 }
 

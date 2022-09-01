@@ -6,7 +6,8 @@
 
 .nav a {
     font-size:1.5rem;
-    margin:.5rem
+    margin:.5rem;
+    text-align: center;
 }
 
 .nav a.nav_active {
@@ -74,5 +75,20 @@
 @media screen and (min-width: 770px) {
     .burger_button {
         display:none
+    }
+    .copyright > div{
+        flex-direction: column;
+    }
+    .copyright span:nth-child(even) {
+        display:none
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .copyright span:nth-child(even) {
+        display:unset
+    }
+    .copyright > div{
+        flex-direction: unset;
     }
 }

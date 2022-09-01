@@ -1,8 +1,5 @@
 import React from 'react'
 
-//SEO
-import { SEO } from "../components/seo/seo"
-
 //Layout Components
 import Layout from '../components/layout/Layout'
 import SolidBackground from '../components/blocks/SolidBackground'
@@ -11,6 +8,9 @@ import SolidBackground from '../components/blocks/SolidBackground'
 import SubPageTitle from '../components/elements/SubPageTitle'
 import ContactForm from '../components/forms/ContactForm'
 import Map from '../components/elements/map/Map'
+
+//SEO
+import { Seo } from "../components/seo/Seo"
 
 export default function Contact() {
 
@@ -40,6 +40,6 @@ export default function Contact() {
 
 export function Head() {
   return (
-    <SEO title="Get In Touch With Us | Wayne Anthonys Barbers" />
+    <Seo title="Get In Touch With Us | Wayne Anthonys Barbers" />
   )
 }

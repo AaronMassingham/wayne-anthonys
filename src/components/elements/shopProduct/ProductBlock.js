@@ -47,7 +47,6 @@ export default function ProductBlock({
                     <div className={ buttons }>
                         <button 
                             className="snipcart-add-item productButton"
-                            
                             data-item-id={ sku }
                             data-item-price={ productPrice } 
                             data-item-url="/shop" 

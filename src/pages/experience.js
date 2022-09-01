@@ -1,8 +1,5 @@
 import React from 'react'
 
-//SEO
-import { SEO } from "../components/seo/seo"
-
 //Layout Components
 import Layout from '../components/layout/Layout'
 import SolidBackground from '../components/blocks/SolidBackground'
@@ -14,12 +11,11 @@ import PokerNights from '../components/elements/pokernights/PokerNights'
 import PokerPriceTable from '../components/elements/pokernights/PokerPriceTable'
 import GalleryCarousel from '../components/elements/carousel/GalleryCarousel'
 
-export default function Experience() {
+//SEO
+import { Seo } from "../components/seo/Seo"
 
-    //WP Data
-    //const data = useBlogPostQuery();
+export default function Experience() {
     
-  
   return (
     <Layout>
       <SolidBackground>
@@ -70,6 +66,6 @@ export default function Experience() {
 
 export function Head() {
   return (
-    <SEO title="The Wayne Anthony Experience | Wayne Anthonys Barbers" />
+    <Seo title="The Wayne Anthony Experience | Wayne Anthonys Barbers" />
   )
 }

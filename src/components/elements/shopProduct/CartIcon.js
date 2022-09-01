@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from "framer-motion"
 
 //Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -9,14 +10,30 @@ import { cartPrompt } from './productblock.module.css'
 
 export default function CartIcon() {
 
+  const cartPromptAnim = {  
+    tapAndHover: {
+      x:'calc(-150px + 3rem)',
+      transition: {
+        duration:.5
+      }
+    }
+  }
+
   return (
-    <div className={ cartPrompt }>
-      <button>
-        <FontAwesomeIcon icon={ faCartShopping }/>
-      </button>
-      <div>
-        <a class="snipcart-checkout">View Cart</a>
-      </div>
-    </div>
+
+      <motion.div 
+        className={ cartPrompt }
+        whileTap="tapAndHover"
+        whileHover="tapAndHover"
+        variants={ cartPromptAnim }
+      >
+        <button>
+          <FontAwesomeIcon icon={ faCartShopping }/>
+        </button>
+        <div>
+          <a className="snipcart-checkout">View Cart</a>
+        </div>
+      </motion.div>
+
   )
 }

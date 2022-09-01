@@ -1,17 +1,16 @@
 import React from "react"
 import { Link } from 'gatsby'
 
-//SEO
-import { SEO } from "../components/seo/seo"
-
 //Block Components
 import SolidBackground from "../components/blocks/SolidBackground"
 
 //Layout Components
 import Layout from '../components/layout/Layout'
 
+//SEO
+import { Seo } from "../components/seo/Seo"
 
-const NotFoundPage = () => {
+export default function NotFoundPage() {
   return (
     <Layout>
       <SolidBackground>
@@ -26,10 +25,8 @@ const NotFoundPage = () => {
   )
 }
 
-export default NotFoundPage
-
 export function Head() {
   return (
-    <SEO title="Oops! 404, Page Not Found | Wayne Anthonys Barbers" />
+    <Seo title="Oops! 404, Page Not Found | Wayne Anthonys Barbers" />
   )
 }

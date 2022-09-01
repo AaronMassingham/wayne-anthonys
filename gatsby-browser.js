@@ -9,7 +9,7 @@ export const wrapPageElement = ({element}) => (
   <>
     <AnimatePresence exitBeforeEnter>
       {element}
-      </AnimatePresence>
+    </AnimatePresence>
     <Background/>
   </>
 );
