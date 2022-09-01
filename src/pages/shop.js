@@ -1,5 +1,6 @@
 import React from 'react'
-import { AnimatePresence, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
+import { Script, ScriptStrategy } from "gatsby"
 
 //Layout Components
 import Layout from '../components/layout/Layout'
@@ -33,16 +34,16 @@ export default function shop() {
     
     return (
         <Layout>
-   
-                <motion.div 
-                    style={{width:'150px', height: '3rem', position: 'fixed', top: '1rem', right:0, zIndex:'99999', background:'red'}}
-                    initial="initial"
-                    animate="animate"
-                    exit="initial"
-                    variants={ cartPromptAnim }
-                >
-                    <CartIcon/>
-                </motion.div>
+            <Script src="https://cdn.snipcart.com/themes/v3.0.22/default/snipcart.js" strategy={ScriptStrategy.idle} />
+            <motion.div 
+                style={{width:'150px', height: '3rem', position: 'fixed', top: '1rem', right:0, zIndex:'99999', background:'red'}}
+                initial="initial"
+                animate="animate"
+                exit="initial"
+                variants={ cartPromptAnim }
+            >
+                <CartIcon/>
+            </motion.div>
    
             <SolidBackground>
                 <SubPageTitle

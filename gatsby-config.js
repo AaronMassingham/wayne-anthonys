@@ -59,18 +59,27 @@ module.exports = {
     },
     __key: "images"
   },
+  //{
+  //  resolve: `gatsby-plugin-snipcart-advanced`,
+  //  options: {
+  //    version: "3.0.29",
+  //    publicApiKey: 'process.env.GATSBY_SNIPCART_API_KEY', // use public api key here or in environment variable
+  //    currency: "gbp",
+  //    openCartOnAdd: true,
+  //    useSideCart: false,
+  //    js: false,
+  //    loadStrategy: 'on-user-interaction',
+  //    // be careful with this mode cart. The cart in this mode has a bug of scroll in firefox
+  //    },
+  //}
+
   {
-    resolve: `gatsby-plugin-snipcart-advanced`,
-    options: {
-      version: "3.0.29",
-      publicApiKey: 'process.env.GATSBY_SNIPCART_API_KEY', // use public api key here or in environment variable
-      currency: "gbp",
-      openCartOnAdd: true,
-      useSideCart: false,
-      loadStrategy: 'on-user-interaction',
-      // be careful with this mode cart. The cart in this mode has a bug of scroll in firefox
-      },
-  }
+      resolve: 'gatsby-plugin-snipcartv3',
+      options: {
+        apiKey: process.env.GATSBY_SNIPCART_API_KEY,
+        js: false
+      }
+    }
 
 ]
 };
