@@ -24,7 +24,7 @@ export default function Footer() {
                 <div>
                     <p>01422 202848</p>
                     <p>LPR Business Park<br/> Halifax Road<br/> Hipperholme<br/> Halifax<br/> HX3 8ER</p>
-                    <div><FontAwesomeIcon icon={ faLocationDot }/> Get Directions</div>
+                    <div><FontAwesomeIcon icon={ faLocationDot }/> <a target="_blank" rel="noreferrer" href='https://www.google.com/maps/place/Wayne+Anthonys+Executive+Barbers/@53.725962,-1.8180867,17z/data=!3m1!4b1!4m5!3m4!1s0x487be7812a041a41:0x28dfce5b57b9c3c3!8m2!3d53.7259609!4d-1.8160168'>Get Directions</a></div>
                 </div>
             </div>
             <div className={ openingTimes }>

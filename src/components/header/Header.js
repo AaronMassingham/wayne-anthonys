@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { motion, AnimatePresence } from "framer-motion"
+import { Link } from 'gatsby'
 
 //style
 import { header, nav_container, desktop, mobile } from '../header/header.module.css'
@@ -34,7 +35,9 @@ export default function HeaderTwo() {
     <>
 
       <div className={ header }>
-        <Logo/>      
+        <Link to='/'>
+          <Logo/>
+        </Link>      
         <Burger toggle={ setToggle } toggleActive={ toggle }/>
       </div>
 

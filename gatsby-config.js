@@ -39,7 +39,8 @@ module.exports = {
 
    "gatsby-plugin-image", 
    "gatsby-plugin-sharp", 
-   "gatsby-transformer-sharp", 
+   "gatsby-transformer-sharp",
+   "gatsby-plugin-sitemap", 
    {
     resolve: 'gatsby-source-filesystem',
     options: {
@@ -49,7 +50,7 @@ module.exports = {
     __key: "images"
   },
   {
-      resolve: 'gatsby-plugin-snipcartv3',
+      resolve: "gatsby-plugin-snipcartv3",
       options: {
         apiKey: process.env.GATSBY_SNIPCART_API_KEY,
         js: false

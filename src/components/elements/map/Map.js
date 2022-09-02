@@ -24,6 +24,7 @@ export default function Map() {
               bootstrapURLKeys={{ key: "AIzaSyAqVloqR8PVG3P6zSOHAhWoy71JsRpZI9E" }}
               defaultCenter={defaultProps.center}
               defaultZoom={defaultProps.zoom}
+              trackViewChanges={false}
             >
               <Pin
                 lat={53.725971501599595}

@@ -21,7 +21,7 @@
     padding: .5rem;
     background: var(--lightGrey);
     border-radius: 100%;
-    top: calc(50% - 4rem);
+    top: calc(50% - 32px);
 }
 
 .container > div:first-of-type {
@@ -29,6 +29,16 @@
 }
 .container > div:last-of-type {
     right: 0;
+}
+
+.container > div button {
+    width:40px;
+    height:40px;
+    padding: 0;;
+}
+
+.container > div button span {
+    width:100%
 }
 
 .container img {

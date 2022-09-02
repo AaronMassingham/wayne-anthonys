@@ -66,6 +66,9 @@
 	font-size: 60%;
 }
 
+.copyright span:nth-child(even) {
+    cursor: default
+}
 .copyright span:nth-child(even),
 .copyright a {
 	color: var(--primaryColour);

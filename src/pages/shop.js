@@ -36,7 +36,7 @@ export default function shop() {
         <Layout>
             <Script src="https://cdn.snipcart.com/themes/v3.0.22/default/snipcart.js" strategy={ScriptStrategy.idle} />
             <motion.div 
-                style={{width:'150px', height: '3rem', position: 'fixed', top: '1rem', right:0, zIndex:'99999', background:'red'}}
+                className='cartSlide'
                 initial="initial"
                 animate="animate"
                 exit="initial"

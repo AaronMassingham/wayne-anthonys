@@ -1,6 +1,10 @@
 import React, { useState } from 'react'
 import { motion, AnimatePresence } from "framer-motion";
 
+//Font Awesome
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons'
+
 //Components
 import Button from '../../button/Button'
 
@@ -38,7 +42,11 @@ export default function GalleryCarousel() {
             key="previous"
             onClick={ () => paginate(page - 1) }
         >
-            <Button text="p"/>
+            <Button>
+              <span>
+                <FontAwesomeIcon icon={ faChevronLeft }/>
+              </span>
+            </Button>
         </motion.div>
         <AnimatePresence exitBeforeEnter>
             <motion.div
@@ -55,7 +63,11 @@ export default function GalleryCarousel() {
             key="next"
             onClick={ () => paginate(page + 1) }
         >
-            <Button text="n"/>
+            <Button>
+              <span>
+                <FontAwesomeIcon icon={ faChevronRight }/>
+              </span>
+            </Button>
         </motion.div>
     </div>
   )

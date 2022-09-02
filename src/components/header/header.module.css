@@ -18,7 +18,7 @@
 	backdrop-filter: blur(3px);
 }
 
-.header svg {
+.header a, .header svg {
 	max-width:300px;
 	height:100%
 }
