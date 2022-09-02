@@ -18,6 +18,12 @@
 	backdrop-filter: blur(3px);
 }
 
+.header a {
+	display:block;
+	width:100%;
+	text-align: center;
+}
+
 .header a, .header svg {
 	max-width:300px;
 	height:100%

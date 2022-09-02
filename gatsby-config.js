@@ -16,12 +16,12 @@ module.exports = {
       "url": "https://wayneanthonys.co.uk/graphql"
     }
   }, 
-  //{
-  //  resolve: 'gatsby-plugin-google-analytics',
-  //  options: {
-  //    "trackingId": ""
-  //  }
-  //},
+  {
+    resolve: 'gatsby-plugin-google-analytics',
+    options: {
+      "trackingId": "G-4RK7YDESZM"
+    }
+  },
   {
     resolve: `gatsby-plugin-manifest`,
     options: {
