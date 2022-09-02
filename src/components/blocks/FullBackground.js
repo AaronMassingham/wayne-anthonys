@@ -13,14 +13,14 @@ const FullBackground = ( {children} ) => {
       opacity: 0,
       scale:.95,
       transition: {
-        duration:.25
+        duration:1
       }
     },
     animate: {
       opacity: 1,
       scale:1,
       transition: {
-        duration:.25
+        duration:1
       }
     },
   }
