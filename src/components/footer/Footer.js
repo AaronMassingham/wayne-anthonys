@@ -18,7 +18,7 @@ export default function Footer() {
             <div className={details}>
                 <div>
                     <h2 className='fancy'>Wayne Anthony's</h2>
-                    <h4>Executive Barbers</h4>
+                    <h3>Executive Barbers</h3>
                 </div>
                 
                 <div>

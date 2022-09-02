@@ -35,7 +35,6 @@
     "gatsby-plugin-preact": "^6.21.0",
     "gatsby-plugin-sharp": "^4.21.0",
     "gatsby-plugin-sitemap": "^5.22.0",
-    "gatsby-plugin-snipcart-advanced": "^1.0.3",
     "gatsby-plugin-snipcartv3": "^2.3.3",
     "gatsby-source-filesystem": "^4.21.0",
     "gatsby-source-wordpress": "^6.21.0",

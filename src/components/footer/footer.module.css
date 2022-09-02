@@ -1,5 +1,4 @@
 .footer {
-
     padding: 2rem;
     color:var(--lightGrey);
     background: var(--bodyTextcolour);
@@ -16,6 +15,9 @@
     font-size: .8rem;
 }
 
+.details h3 {
+    font-size: var(--smFontSize);
+}
 
 .footer h3, .footer h4 {
     font-family: var(--chonkyFont);
@@ -28,11 +30,11 @@
 }
 
 .footer h2,
-.footer h3 {
+.footer .details h3 {
     padding:0;
     margin:0;
 }
-.footer h2, .footer h3 {
+.footer h2, .footer .details h3 {
     line-height:1
 }
 .footer h4 span {
@@ -40,7 +42,7 @@
     display:block
 }
 
-.footer h4 span {
+.openingTimes h4 span {
     font-family: var(--standardFont);
     margin-bottom:0;
 

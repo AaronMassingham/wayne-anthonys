@@ -35,7 +35,7 @@ export default function HeaderTwo() {
     <>
 
       <div className={ header }>
-        <Link to='/'>
+        <Link aria-current="page" to='/'>
           <Logo/>
         </Link>      
         <Burger toggle={ setToggle } toggleActive={ toggle }/>
