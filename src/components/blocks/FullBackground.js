@@ -31,7 +31,7 @@ const FullBackground = ( {children} ) => {
       opacity: 0,
       y: -30,
       transition: {
-        duration:1
+        duration:.75
       }
     },
     animate: {
