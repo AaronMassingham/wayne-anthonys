@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 
 //Components
 import Nav from './Nav'
@@ -8,6 +8,7 @@ import Social from '../social/Social'
 import { copyright } from '../nav/nav.module.css'
 
 export default function NavContainer({ toggle, toggleActive }) {
+
   return (
     <>
       <div 

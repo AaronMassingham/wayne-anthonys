@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from "framer-motion"
 import { Link } from 'gatsby'
 
@@ -10,9 +10,20 @@ import NavContainer from '../nav/NavContainer'
 import Logo from '../logo/Logo'
 import Burger from '../nav/Burger'
 
+//Media Query
+import useMediaQuery from '../../hooks/utils/useMediaQuery'
+
 export default function HeaderTwo() {
 
   const [toggle, setToggle] = useState(false);
+
+  const matches = useMediaQuery('(max-width:770px)');
+
+  if (toggle) {
+    matches && document.body.classList.add('noOverflow');
+  } else {
+    matches && document.body.classList.remove('noOverflow');
+  }
 
   const navAnim = {
     initial: {

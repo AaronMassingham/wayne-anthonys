@@ -12,6 +12,8 @@ import SolidBackground from '../components/blocks/SolidBackground'
 //components
 import Button from '../components/button/Button'
 
+//SEO
+import { SEO } from '../components/seo/seo'
 
 export default function BlogPost({ data }) {
 
@@ -62,3 +64,9 @@ export const query = graphql`
     }
   `
 
+  export function Head({ data }) {
+    const post = data.wpPost
+    return (
+      <SEO title={`Blog Post | ${ post.title }`} />
+    )
+  }
