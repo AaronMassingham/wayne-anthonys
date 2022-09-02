@@ -65,7 +65,7 @@
     display:none
 }
 
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 990px) {
     .images .img:nth-child(1),
     .images .img:nth-child(3) {
         display:block

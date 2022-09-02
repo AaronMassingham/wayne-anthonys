@@ -1,8 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-
-
 //Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHandScissors, faScissors } from '@fortawesome/free-solid-svg-icons'

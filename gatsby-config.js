@@ -54,7 +54,7 @@ module.exports = {
       options: {
         apiKey: process.env.GATSBY_SNIPCART_API_KEY,
         js: false,
-        styles: false
+        //styles: false
       }
     }
 

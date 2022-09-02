@@ -64,7 +64,7 @@ export function Head() {
     return (
         <>
             <SEO title="Buy Our Hair Care Products | Wayne Anthonys Barbers" />
-            <link href="https://cdn.snipcart.com/themes/v3.0.22/default/snipcart.css" rel="stylsheet"></link>
+            {/*<link href="https://cdn.snipcart.com/themes/v3.0.22/default/snipcart.css" rel="stylsheet"></link>*/}
         </>
     )
 }

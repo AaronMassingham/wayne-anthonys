@@ -19,11 +19,18 @@ export default function HeaderTwo() {
 
   const matches = useMediaQuery('(max-width:770px)');
 
+
   if (toggle) {
     matches && document.body.classList.add('noOverflow');
   } else {
     matches && document.body.classList.remove('noOverflow');
   }
+
+  if (toggle) {
+    !matches && document.body.classList.remove('noOverflow');
+  }
+
+
 
   const navAnim = {
     initial: {

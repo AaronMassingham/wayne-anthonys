@@ -55,7 +55,7 @@ const FullBackground = ( {children} ) => {
         >
            <StaticImage 
             src="../../images/test.jpg" 
-            alt={``}
+            alt='Main Background Image'
             placeholder="blurred"
             layout="fullWidth"
             fit="cover"
