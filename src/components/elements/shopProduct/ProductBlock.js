@@ -52,6 +52,9 @@ export default function ProductBlock({
                             data-item-url="/shop" 
                             data-item-name={ productName }  
                             data-item-file-guid={ voucherGuid }
+                            data-item-custom1-name={ voucherGuid ? 'Vouchers Information' : null }
+                            data-item-custom1-type="readonly"
+                            data-item-custom1-value={voucherGuid ? 'After purchase you should receive an email with a download link for your voucher! Please check your junk folder if it does not appear in your inbox.' : null}
                         >
                             Add to cart
                         </button>
@@ -76,7 +79,10 @@ export default function ProductBlock({
                                     data-item-price={ productPrice }
                                     data-item-url="/shop" 
                                     data-item-name={ productName }  
-                                    data-item-file-guid={voucherGuid && voucherGuid}
+                                    data-item-file-guid={ voucherGuid }
+                                    data-item-custom1-name={ voucherGuid ? 'Vouchers Information' : null }
+                                    data-item-custom1-type="readonly"
+                                    data-item-custom1-value={voucherGuid ? 'After purchase you should receive an email with a download link for your voucher! Please check your junk folder if it does not appear in your inbox.' : null}
                                 >
                                     Add this item to your cart
                                 </button>
