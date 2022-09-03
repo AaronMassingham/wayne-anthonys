@@ -13,13 +13,13 @@ module.exports = {
   plugins: [{
     resolve: 'gatsby-source-wordpress',
     options: {
-      "url": "https://wayneanthonys.co.uk/graphql"
+      "url": "https://f3z.8a2.myftpupload.com/graphql"
     }
   }, 
   {
     resolve: 'gatsby-plugin-google-analytics',
     options: {
-      "trackingId": "G-4RK7YDESZM"
+      "trackingId": process.env.GOOGLE_TRACKING_ID
     }
   },
   {
