@@ -455,3 +455,7 @@ button.productButton.snipcart-add-item {
 	top: 1rem;
 }
 }
+
+.blogPostContent img {
+	display:none
+}

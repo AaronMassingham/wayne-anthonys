@@ -32,7 +32,7 @@ export default function BlogPost({ data }) {
                 <span>Posted <em>{ post.date }</em></span>
                 <h1 className='small' style={styles}>{ post.title }</h1>
                 <AnimatePresence exitBeforeEnter>
-                    <div dangerouslySetInnerHTML={{ __html: post.content }} />
+                    <div className='blogPostContent' dangerouslySetInnerHTML={{ __html: post.content }} />
                 </AnimatePresence>
                 <div className='bdr-tb-solid flex-between' style={{padding: '1rem'}}>
                     <Link to="/blog">
