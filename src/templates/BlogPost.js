@@ -34,7 +34,7 @@ export default function BlogPost({ data }) {
                 <AnimatePresence exitBeforeEnter>
                     <div className='blogPostContent' dangerouslySetInnerHTML={{ __html: post.content }} />
                 </AnimatePresence>
-                <div className='bdr-tb-solid flex-between' style={{padding: '1rem'}}>
+                <div className='bdr-tb-solid flex-between' style={{padding: '1rem 0'}}>
                     <Link to="/blog">
                         <Button text="Back to posts" hasIcon>
                             <span>

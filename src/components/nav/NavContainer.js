@@ -21,7 +21,7 @@ export default function NavContainer({ toggle, toggleActive }) {
       </div>
 
       <div className='flex-between bdr-t-solid'>
-        <h4 className='text-center'>01422 202 848</h4>
+        <h4 className='text-center'><a rel="noreferrer" href='tel:01422 202 848'>01422 202 848</a></h4>
       </div>
 
       <div className='bdr-t-solid'>

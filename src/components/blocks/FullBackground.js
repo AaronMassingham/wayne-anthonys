@@ -58,6 +58,7 @@ const FullBackground = ( {children} ) => {
             alt='Main Background Image'
             placeholder="blurred"
             layout="fullWidth"
+            loading='eager'
             fit="cover"
             style={{
               gridArea: "1/1",
