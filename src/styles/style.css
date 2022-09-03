@@ -457,5 +457,5 @@ button.productButton.snipcart-add-item {
 }
 
 .blogPostContent .gatsby-image-wrapper {
-	display:none
+	display:none !important
 }
