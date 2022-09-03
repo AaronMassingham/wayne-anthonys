@@ -456,6 +456,6 @@ button.productButton.snipcart-add-item {
 }
 }
 
-.blogPostContent img {
+.blogPostContent .gatsby-image-wrapper {
 	display:none
 }
