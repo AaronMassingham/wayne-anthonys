@@ -14,6 +14,7 @@ import Button from '../components/button/Button'
 
 //SEO
 import { SEO } from '../components/seo/seo'
+import { AnimatePresence } from 'framer-motion'
 
 export default function BlogPost({ data }) {
 
@@ -30,7 +31,9 @@ export default function BlogPost({ data }) {
             <SolidBackground>
                 <span>Posted <em>{ post.date }</em></span>
                 <h1 className='small' style={styles}>{ post.title }</h1>
-                <div dangerouslySetInnerHTML={{ __html: post.content }} />
+                <AnimatePresence exitBeforeEnter>
+                    <div dangerouslySetInnerHTML={{ __html: post.content }} />
+                </AnimatePresence>
                 <div className='bdr-tb-solid flex-between' style={{padding: '1rem'}}>
                     <Link to="/blog">
                         <Button text="Back to posts" hasIcon>
