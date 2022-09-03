@@ -16,12 +16,7 @@ module.exports = {
       "url": "https://f3z.8a2.myftpupload.com/graphql"
     }
   }, 
-  {
-    resolve: 'gatsby-plugin-google-analytics',
-    options: {
-      "trackingId": process.env.GOOGLE_TRACKING_ID
-    }
-  },
+  
   {
     resolve: `gatsby-plugin-manifest`,
     options: {
@@ -56,7 +51,23 @@ module.exports = {
         js: false,
         //styles: false
       }
-    }
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [
+          process.env.GOOGLE_TRACKING_ID // Google Analytics / GA
+        ],
+
+      },
+    },
+    {/*
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        "trackingId": process.env.GOOGLE_TRACKING_ID
+      }
+    */},
 
 ]
 };
